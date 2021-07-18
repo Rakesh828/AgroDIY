@@ -43,7 +43,7 @@ function calculate() {
     let mT = document.querySelector(".mtot");
     let dT = document.querySelector(".dtot");
 
-    let T = document.querySelector(".total");
+    let t = document.querySelector(".total");
 
     element1.innerHTML = text
     element2.innerHTML = lastMessage
@@ -61,7 +61,7 @@ function calculate() {
     mT.innerHTML = "₹ 15/-"
     dT.innerHTML = "₹ 80/-"
 
-    T.innerHTML = "₹" + total
+    t.innerHTML = "₹" + total
 
 }
 
