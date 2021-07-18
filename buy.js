@@ -12,6 +12,7 @@ function calculate() {
     let f = document.querySelector("#fert");
     let c = document.querySelector("#coco");
 
+
     potsQ = (+p.value);
     seedsQ = (+s.value);
     fertQ = (+f.value);
@@ -23,7 +24,7 @@ function calculate() {
     let fertT = fertQ * 100;
     let cocoT = cocoQ * 20;
 
-    total = potsT + seedsT + fertT + cocoT + 55;
+    total = potsT + seedsT + fertT + cocoT + 15 + 80;
 
     //place values
     let element1 = document.querySelector(".text")
@@ -33,11 +34,14 @@ function calculate() {
     let sQ = document.querySelector(".sqt");
     let fQ = document.querySelector(".fqt");
     let cQ = document.querySelector(".cqt");
+    let mQ = document.querySelector(".mqt");
 
     let pT = document.querySelector(".ptot");
     let sT = document.querySelector(".stot");
     let fT = document.querySelector(".ftot");
     let cT = document.querySelector(".ctot");
+    let mT = document.querySelector(".mtot");
+    let dT = document.querySelector(".dtot");
 
     let T = document.querySelector(".total");
 
@@ -48,11 +52,14 @@ function calculate() {
     sQ.innerHTML = seedsQ
     fQ.innerHTML = fertQ
     cQ.innerHTML = cocoQ
+    mQ.innerHTML = 1
 
     pT.innerHTML = "₹" + potsT
     sT.innerHTML = "₹" + seedsT
     fT.innerHTML = "₹" + fertT
     cT.innerHTML = "₹" + cocoT
+    mT.innerHTML = "₹ 15/-"
+    dT.innerHTML = "₹ 80/-"
 
     T.innerHTML = "₹" + total
 
